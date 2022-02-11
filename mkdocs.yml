@@ -1,0 +1,34 @@
+site_name: First Docs
+site_url: https://laithoura.github.io/learn-mkdocs/
+# DEV: http://127.0.0.1:8000/ || 
+# LIVE: https://laithoura.github.io/learn-mkdocs/ => Note: Don't forget to update relative in `custom_theme\404.html`. Check readme for details.
+
+nav:
+    - Home: index.md
+    - Copy KYC: ./kyc/index.md
+    - Meta Data: meta.md
+    - Learn Markdown: markdown.md
+    - Guide: './guide/user/writing-your-docs.md'
+    - 'User':
+        - 'Writing your docs': './guide/user/writing-your-docs.md'
+        - 'Styling your docs': './guide/user/styling-your-docs.md'
+    - 'Developer':
+        - 'Writing my docs': './guide/developer/writing-your-docs.md'
+        - 'Styling my docs': './guide/developer/styling-your-docs.md'
+    - Help: ./help/index.md
+    
+theme:
+    name: readthedocs # `mkdocs` | `readthedocs`
+    custom_dir: custom_theme/
+    shortcuts: # This feature doesn't with with `readthedocs`. So, in order use this feature you have to use `mkdocs`
+        help: 191    # ?
+        next: 78     # n
+        previous: 80 # p
+        search: 83   # s
+    prev_next_buttons_location: top
+    navigation_depth: 4 # default: 4
+markdown_extensions:
+    - toc:
+        permalink: "#"
+        baselevel: 1
+        separator: "-"

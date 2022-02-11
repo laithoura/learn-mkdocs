@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block htmltitle %}
+<title>Page Not Found</title>
+{% endblock %}
+
+{% block content %}
+<div class="col-12" style="text-align: center;">
+    <h1>404</h1>
+    <h6>
+        <img src="/learn-mkdocs/img/jerry.png" alt="Page Not found" width="200" height="200">
+    </h6>
+    <h6>Hey captain! Looks like you're heading to the wrong planet!</h6>
+    <h6 
+        style="background: #2980B9;
+        width: fit-content;
+        padding: 8px 24px;
+        border-radius: 4px; 
+        margin: 0 auto;">
+        <a style="color: #fff;" href="/learn-mkdocs">Ok, Take me home</a>   
+    </h6> 
+</div>
+{% endblock %}
