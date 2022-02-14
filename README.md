@@ -1,8 +1,8 @@
 # Build project docs with MkDocs
 
-- Learn & Build project documents with [MkDocs](https://www.mkdocs.org/) 
+- Learn & Build project documentations with [MkDocs](https://www.mkdocs.org/) 
 
-- Visit my docs if you're too free (: [First Docs](https://laithoura.github.io/learn-mkdocs/)  
+- Hey ya, visit my [First Docs](https://laithoura.github.io/learn-mkdocs/) if you have no task to do :rofl:   
 
   ![Page Not Found](readme/home.png)
 
@@ -50,3 +50,18 @@
           version: 0.13.0
           contextPath: "/learn-mkdocs/" # Dev="/"; PRD="/learn-mkdocs/"
       ```
+3. Configure extra css/js version
+
+- Whenever you modify any line of code within `docs/css` or `docs/js`, you have to increase its version in `mkdocs.yml` file to avoid css/js caching issue on client browsers.
+- Open `mkdocs.yml`
+  ```markdown
+  extra_css:
+      - css/custom.css?v=1.0.0 # Eg: v=1.0.1; v=1.0.2
+      - ...
+      - ...
+  
+  extra_javascript:
+      - js/custom.js?v=1.0.0 # Eg: v=1.0.1; v=1.0.2
+      - ...
+      - ...
+  ```

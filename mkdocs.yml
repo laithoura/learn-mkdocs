@@ -11,10 +11,10 @@ extra:
     pageNotFoundTitle: "Page Not Found"
 
 extra_css:
-    - css/custom.css
+    - css/custom.css?v=1.0.0 # Increase version whenever you modify the file to avoid caching issue
 
 extra_javascript:
-    - js/custom.js
+    - js/custom.js?v=1.0.0 # Increase version whenever you modify the file to avoid caching issue
 
 nav:
     - Home: index.md
