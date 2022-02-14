@@ -1,7 +1,7 @@
 # Please check README.md for more details on any configuration
 # Powered by: https://www.mkdocs.org/
 
-site_name: First Docs
+site_name: First Docs (1.0.0)
 site_url: https://laithoura.github.io/learn-mkdocs/
           # DEV : http://127.0.0.1:8000/
           # PROD: https://laithoura.github.io/learn-mkdocs/
@@ -21,11 +21,10 @@ nav:
     - Copy KYC: ./kyc/index.md
     - Meta Data: meta.md
     - Learn Markdown: markdown.md
-    - Guide: './guide/user/writing-your-docs.md'
-    - 'User':
+    - 'User Guide':
         - 'Writing your docs': './guide/user/writing-your-docs.md'
         - 'Styling your docs': './guide/user/styling-your-docs.md'
-    - 'Developer':
+    - 'Developer Guide':
         - 'Writing my docs': './guide/developer/writing-your-docs.md'
         - 'Styling my docs': './guide/developer/styling-your-docs.md'
     - Help: ./help/index.md
