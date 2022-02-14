@@ -3,7 +3,10 @@ site_url: https://laithoura.github.io/learn-mkdocs/
 # DEV: http://127.0.0.1:8000/ || 
 # LIVE: https://laithoura.github.io/learn-mkdocs/ 
 # => Note: Don't forget to update relative path in `custom_theme\404.html`. Check readme for details.
-
+extra:
+    version: 1.0
+    contextPath: "/learn-mkdocs/" # Dev="/" ; PRD="/learn-mkdocs/"
+    pageNotFoundTitle: "Page Not Found"
 nav:
     - Home: index.md
     - Copy KYC: ./kyc/index.md

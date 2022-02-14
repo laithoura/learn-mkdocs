@@ -19,41 +19,34 @@
 5. `mkdocs gh-deploy` - build & push your project docs into gh-pages branch and deploy it to [GitHub Pages](https://pages.github.com/).
 
 ## Configuration
-#### I. DEV
 - Before we deploy the project on local or [GitHub Pages](https://pages.github.com/), we need to change below configuration accordingly.
 1. Configure Site URL:
     - open `mkdocs.yml`
+   1. DEV
       ```
       site_url: http://127.0.0.1:8000/
       ```
-2. Configure Custom Resources Relative Path  
-- We created a custom page 404 page, so we need to adjust the resource path accordingly on **Local** & **Live** server.
-    - open `custom_theme/404.html`  
-    - Line 11:
-      ```
-      <img src="/img/jerry.png" alt="Page Not found" width="200" height="200">
-      ```
-    - Line 22:
-      ```
-      <a style="color: #fff;" href="/">Ok, Take me home</a> 
-      ```
-
-#### II. PRD (Host on [Github Pages](https://pages.github.com/)):
-    
-- Before we deploy the project on local or [GitHub Pages](https://pages.github.com/), we need to change below configuration
-1. Configure Site URL:
-    - open `mkdocs.yml`
+   2. PROD
       ```
       site_url: https://laithoura.github.io/learn-mkdocs/
       ```
-2. Configure Custom Resources Relative Path
-- We created a custom page 404 page, so we need to adjust the resource path accordingly on **Local** & **Live** server.
-    - open `custom_theme/404.html`
-    - Line 11:
+2. Configure Custom Resources Relative Path:  
+   - Open `mkdocs.yml`
+   1. DEV
+      ```markdown
+      extra:
+          version: 0.13.0
+          contextPath: "/"
       ```
-      <img src="/learn-mkdocs/img/jerry.png" alt="Page Not found" width="200" height="200">
+   2. PROD
+      ```markdown
+      extra:
+          version: 0.13.0
+          contextPath: "/learn-mkdocs/"
       ```
-    - Line 22:
-      ```
-      <a style="color: #fff;" href="/learn-mkdocs">Ok, Take me home</a> 
+   -  **Result:** 
+      ```markdown
+      extra:
+          version: 0.13.0
+          contextPath: "/learn-mkdocs/" # Dev="/"; PRD="/learn-mkdocs/"
       ```
