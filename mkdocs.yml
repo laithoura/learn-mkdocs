@@ -1,12 +1,21 @@
+# Please check README.md for more details on any configuration
+# Powered by: https://www.mkdocs.org/
+
 site_name: First Docs
 site_url: https://laithoura.github.io/learn-mkdocs/
-# DEV: http://127.0.0.1:8000/ || 
-# LIVE: https://laithoura.github.io/learn-mkdocs/ 
-# => Note: Don't forget to update relative path in `custom_theme\404.html`. Check readme for details.
+          # DEV : http://127.0.0.1:8000/
+          # PROD: https://laithoura.github.io/learn-mkdocs/
 extra:
     version: 1.0
     contextPath: "/learn-mkdocs/" # Dev="/" ; PRD="/learn-mkdocs/"
     pageNotFoundTitle: "Page Not Found"
+
+extra_css:
+    - css/custom.css
+
+extra_javascript:
+    - js/custom.js
+
 nav:
     - Home: index.md
     - Copy KYC: ./kyc/index.md
