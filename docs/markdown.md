@@ -130,9 +130,24 @@ Content Cell  | Content Cell
 
 ## Fenced code blocks
 
+```
+`Single Quote`
+```
+
 `Single Quote`
 
+***
+
+```
 ``Double Quotes``
+```
+``Double Quotes``
+
+***
+
+```
+```Triple Quotes```
+```
 
 ```
 Triple Quotes
@@ -159,8 +174,10 @@ def fn():
 ```
 - Java
 ```Java
-public static void main(String[] args) {
-    //do something
+public class App {
+ public static void main(String[] args) {
+  //do something
+ }
 }
 ```
 - Script

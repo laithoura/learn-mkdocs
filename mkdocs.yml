@@ -1,7 +1,8 @@
 site_name: First Docs
 site_url: https://laithoura.github.io/learn-mkdocs/
 # DEV: http://127.0.0.1:8000/ || 
-# LIVE: https://laithoura.github.io/learn-mkdocs/ => Note: Don't forget to update relative in `custom_theme\404.html`. Check readme for details.
+# LIVE: https://laithoura.github.io/learn-mkdocs/ 
+# => Note: Don't forget to update relative path in `custom_theme\404.html`. Check readme for details.
 
 nav:
     - Home: index.md
